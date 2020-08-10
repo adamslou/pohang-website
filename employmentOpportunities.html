@@ -1,0 +1,113 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Louis Adams">
+<meta name="description" content="employment opportunities in Pohang for foreigners">
+<meta name="keywords" content="employment opportunities Pohang posts jobs">
+<title>Louis's Pohang Page</title>
+<link rel="icon" href="images/p_logo.png">
+<link rel="stylesheet" href="pohangPage.css">
+<style>
+  form {margin: 20px; display: table;}
+  .row {display: table-row;}
+  .row > * {display: table-cell; vertical-align: top;}
+  .center {margin: 10px 0px; display: flex; justify-content: center;}
+  table {border-spacing: 3px;}
+  th {font: x-large Arial sans-serif; background-color: lightgray; text-align: center; padding: 3px;}
+  td {background-color: mintcream;}
+</style>
+</head>
+
+<body>
+<header>
+  <a href="index.html"><img class="logo-left" src="images/pohang_logo.png" alt="Pohang Logo"></a>
+  <a href="index.html"><img class="logo-right" src="images/pohang_logo.png" alt="Pohang Logo"></a>
+  <h1>Louis's Pohang Page</h1>
+  <nav>
+    <ul>
+      <li><a href="employmentOpportunities.html">Employment Opportunities</a></li>
+      <li><a href="events.html">Events in Pohang</a></li>
+      <li><a href="foreignCitizenServices.html">Foreign Citizen Services</a></li>
+      <li><a href="index.html">Pohang Area Description</a></li>
+      <li><a href="touristDestinations.html">Tourist Destinations</a></li>
+      <li><a href="contactLouis.html">Contact Louis</a></li>
+    </ul>
+  </nav>
+  <h2>Employment Opportunities</h2>
+</header>
+<p>
+  If you are looking to employ someone in the Pohang area feel free to post the position below.  Please don't make multiple posts unless there are
+  multiple positions available.
+</p>
+<form>
+  <div class="row">
+    <label for="employer-name">Employer Name: </label>
+    <input id="employer-name" type="text" size="43" maxlength="43" placeholder="Name, Company Name, or School Name">
+  </div>
+  <br>
+  <div class="row">
+    <label for="employer-address">Employer Address: </label>
+    <textarea id="employer-address" rows="2" cols="40" maxlength="120" placeholder="Location of Employer"></textarea>
+  </div>
+  <br>
+  <div class="row">
+    <label for="job-description">Job Description: </label>
+    <textarea id="job-description" rows="2" cols="40" maxlength="120" placeholder="e.g. Teach English to elementary and middle schools students in an academy"></textarea>
+  </div>
+  <br>
+  <div class="row">
+    <label for="working-hours">Working Hours:</label>
+    <input id="working-hours" type="text" size="43" maxlength="43" placeholder="e.g. MWF 8:30-4:30 TTH 12:00-6:00">
+  </div>
+  <br>
+  <div class="row">
+    <label for="salary-and-benefits">Salary and Benefits:&nbsp;</label>
+    <textarea id="salary-and-benefits" rows="2" cols="40" maxlength="120" placeholder="e.g. 2.4 million won/month + housing + airfare"></textarea>
+  </div>
+  <br>
+  <div class="row">
+    <label for="months">Start Date:</label>
+    <select id="months" name="months">
+      <option label=" "></option> <option>Undetermined</option> 
+      <option>Jan</option> <option>Feb</option> <option>Mar</option> <option>Apr</option> <option>May</option> <option>Jun</option>
+      <option>Jul</option> <option>Aug</option> <option>Sep</option> <option>Oct</option> <option>Nov</option> <option>Dec</option>
+    </select>
+    <select id="days" name="days">
+      <option label=" "></option>
+      <option>1</option> <option>2</option> <option>3</option> <option>4</option> <option>5</option> <option>6</option> <option>7</option> <option>8</option>
+      <option>9</option> <option>10</option> <option>11</option> <option>12</option> <option>13</option> <option>14</option> <option>15</option> <option>16</option>
+      <option>17</option> <option>18</option> <option>19</option> <option>20</option> <option>21</option> <option>22</option> <option>23</option> <option>24</option>
+      <option>25</option> <option>26</option> <option>27</option> <option>28</option> <option>29</option> <option>30</option> <option>31</option>
+    </select>
+  </div>
+  <br>
+  <div class="row">
+    <label for="contact-info">Contact Info:</label>
+    <input id="contact-info" type="text" size="43" maxlength="43" placeholder="e.g. John-Doe@hotmail.com / phone#: ### ### ####">
+  </div>
+  <br>
+  <input type="submit" id="form-submit" value="Add Job to List" onclick="addJob(this.form)">
+</form>
+<h2>Job Posts for Pohang</h2>
+<div class="center">
+  <table id="jobs-table">
+    <tr>
+      <th>Employer Name</th> <th>Employer Address</th>
+      <th>Job Description</th> <th>Working Hours</th>
+      <th>Salary and Benefits</th> <th>Start Date</th> <th>&nbsp;&nbsp;</th>
+      <th>Contact Info</th>
+    </tr>
+  </table>
+</div>
+<footer>
+  <nav><ul>
+    <li><a href="#">Top</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul></nav>
+<h5>Copyright &copy; 2019 Louis Adams. All rights reserved.</h5>
+</footer>
+<script src="employmentOpportunities.js"></script>
+</body>
+</html>

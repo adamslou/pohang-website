@@ -1,0 +1,40 @@
+﻿/* Louis Adams */
+
+  @font-face {
+    font-family: CartoonistHand;
+    src: url(fonts/cartoonisthand.woff2) format("woff2"),
+         url(fonts/cartoonisthand.woff) format("woff"),
+         url(fonts/cartoonisthand.ttf) format("truetype");
+  }
+  @font-face {
+    font-family: GloriaHallelujah;
+    src: url(fonts/gloriahallelujah-webfont.woff2) format("woff2"),
+         url(fonts/gloriahallelujah-webfont.woff) format("woff"),
+         url(fonts/GloriaHallelujah.ttf) format("truetype");
+  }
+  body {background-color: whitesmoke;} 
+  p {font: large arial sans-serif; text-align: justify; margin: 20px;}
+  header {background-color: lightsteelblue; margin: 0px 20px;}
+  h1 {font-family: GloriaHallelujah; font-size: 2.5em; text-align: center; padding: 5px 5px 0px 5px;} 
+  h2 {font-family: CartoonistHand; text-align: center; padding:  0px 20px 10px 20px;}
+  h3 {margin: 0 20px;}
+  h5 {margin: 0 20px; text-align: center;}
+  .left {float: left; width: 400px; margin: 10px 10px 0 0;}
+  .right {float: right; width: 400px; margin: 10px 0 0 10px;}
+  .logo-left {float: left; margin: 10px;}
+  .logo-right {float: right; margin: 10px; visibility: hidden;}
+  nav ul {
+    list-style-type: none;
+    text-align: center;
+    padding-left: 0px;
+  }
+  nav li {
+    display: inline-block;
+    padding: 0px 4px 2px 4px;
+    margin: 0px 5px 0px 5px;
+    background-color: Gainsboro;
+    border: outset;
+    border-color: whitesmoke;
+    font: x-large Arial sans-serif;
+  }
+  nav a {text-decoration: none;}

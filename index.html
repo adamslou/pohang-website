@@ -1,0 +1,358 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="author" content="Louis Adams">
+<meta name="description" content="Pohang area description and survey">
+<meta name="keywords" content="Pohang map area description districts survey">
+<title>Louis's Pohang Page</title>
+<link rel="icon" href="images/p_logo.png">
+<link rel="stylesheet" href="pohangPage.css">
+<style>
+  .scroller {
+    height: 200px;
+    overflow: auto;
+  }
+  .slides {display: none}
+  img {vertical-align: middle;}
+
+  .slideshow {
+    max-width: 1220px;
+    position: relative;
+    margin: auto;
+  }
+
+  /* Buttons for the slideshow */
+  .prev, .next {
+    cursor: pointer;
+    position: absolute;
+    top: 50%;
+    width: auto;
+    padding: 16px;
+    margin-top: -22px;
+    color: white;
+    font-weight: bold;
+    font-size: 18px;
+    transition: 0.6s ease;
+    border-radius: 0 3px 3px 0;
+    user-select: none;
+  }
+
+  .next {
+    right: 0;
+    border-radius: 3px 0 0 3px;
+  }
+
+  .prev:hover, .next:hover {
+    background-color: rgba(0,0,0,0.8);
+  }
+
+  /* Caption for the slideshow */
+  .caption {
+    color: #f2f2f2;
+    font-size: 20px;
+    padding: 8px 12px;
+    position: absolute;
+    bottom: 8px;
+    width: 100%;
+    text-align: center;
+  }
+
+  /* Numbers for the slideshow */
+  .numbertext {
+    color: #f2f2f2;
+    font-size: 15px;
+    padding: 8px 12px;
+    position: absolute;
+    top: 0;
+  }
+
+  /* The dots for the slideshow */
+  .dot {
+    cursor: pointer;
+    height: 15px;
+    width: 15px;
+    margin: 0 2px;
+    background-color: #bbb;
+    border-radius: 50%;
+    display: inline-block;
+    transition: background-color 0.6s ease;
+  }
+
+  .active, .dot:hover {
+    background-color: #717171;
+  }
+
+  /* Fading animation */
+  .slides {
+    -webkit-animation-name: fade;
+    -webkit-animation-duration: 1.5s;
+    animation-name: fade;
+    animation-duration: 1.5s;
+  }
+
+  @-webkit-keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  @keyframes fade {
+    from {opacity: .4} 
+    to {opacity: 1}
+  }
+
+  /* On smaller screens, decrease text size */
+  @media only screen and (max-width: 300px) {
+    .prev, .next,.caption {font-size: 11px}
+  }
+  #wrapper {
+    display: flex;
+    justify-content: center;
+  }
+  #figure {
+    position: relative;
+    width: 1220px;
+    height: 798px;
+    padding: 0px;
+    margin: 0px 20px;
+  }
+  #pohangMap {
+  position: absolute;
+  top: 0px; left: 0px;
+  width: 600px;
+  height: 658px;
+  }
+  iframe {
+    position: absolute;
+    top: 0px; left: 620px;
+    width: 600px;
+    height: 658px;
+    margin: 0px 0px;
+  }
+  figcaption {
+    position: absolute;
+    top: 673px;
+    width: 1220px;
+    font: large "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+    text-align: justify;
+  }
+  hr {background-color: lightsteelblue; height: .5px; margin: 20px;} 
+  label {margin: 0 20px;}
+  .button {margin: 0 20px;}
+  .results {text-align: right; position: relative; right: 700px;}
+  .results h2 {text-align: right;}
+  
+</style>
+</head>
+
+<body>
+<header>
+  <a href="index.html"><img class="logo-left" src="images/pohang_logo.png" alt="Pohang Logo"></a>
+  <a href="index.html"><img class="logo-right" src="images/pohang_logo.png" alt="Pohang Logo"></a>
+  <h1>Louis's Pohang Page</h1>
+  <nav>
+    <ul>
+      <li><a href="employmentOpportunities.html">Employment Opportunities</a></li>
+      <li><a href="events.html">Events in Pohang</a></li>
+      <li><a href="foreignCitizenServices.html">Foreign Citizen Services</a></li>
+      <li><a href="index.html">Pohang Area Description</a></li>
+      <li><a href="touristDestinations.html">Tourist Destinations</a></li>
+      <li><a href="contactLouis.html">Contact Louis</a></li>
+    </ul>
+  </nav>
+  <h2>Pohang Area Description</h2>
+</header>
+<div class="slideshow">
+<div class="slides">
+  <div class="numbertext">1 / 5</div>
+  <img src="images/posco2.jpg" style="width:100%">
+  <div class="caption">Pohang Steel Company (POSCO)</div>
+</div>
+<div class="slides">
+  <div class="numbertext">2 / 5</div>
+  <img src="images/fireworks.jpg" style="width:100%">
+  <div class="caption">Pohang Fireworks Festival</div>
+</div>
+<div class="slides">
+  <div class="numbertext">3 / 5</div>
+  <img src="images/steel_art_festival.jpg" style="width:100%">
+  <div class="caption">Pohang Steel Art Festival</div>
+</div>
+<div class="slides">
+  <div class="numbertext">4 / 5</div>
+  <img src="images/bukbu_beach.jpg" style="width:100%">
+  <div class="caption">Yeongildae Beach</div>
+</div>
+<div class="slides">
+  <div class="numbertext">5 / 5</div>
+  <img src="images/homigot2.jpg" style="width:100%">
+  <div class="caption">Homigot Sunrise Plaza</div>
+</div>
+
+<a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+<a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+</div>
+<br>
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span> 
+  <span class="dot" onclick="currentSlide(2)"></span> 
+  <span class="dot" onclick="currentSlide(3)"></span> 
+  <span class="dot" onclick="currentSlide(4)"></span> 
+  <span class="dot" onclick="currentSlide(5)"></span> 
+</div>
+<br>
+<br>
+
+<map name="pohang-areas" id="pohang-areas">
+  <area href="images/i-dong.jpg" shape="poly" coords="105,405,155,400,178,496,142,498" target="photo" alt="I-dong" title="I-dong">
+  <area href="images/jigok-dong.jpg" shape="poly" coords="17,393,94,408,106,477,97,551,41,543,7,466" target="photo" alt="Jigok-dong" title="Jigok-dong">
+  <area href="images/posco.jpg" shape="poly" coords="471,370,533,391,431,539,588,507,442,651,335,627,308,583,391,442" target="photo" alt="Posco" title="Posco">
+  <area href="images/jukdo-dong.jpg" shape="poly" coords="270,392,309,382,316,406,272,444,254,469,226,450" target="photo" alt="Jukdo-dong" title="Jukdo-dong">
+  <area href="images/downtown.jpg" shape="poly" coords="270,390,287,328,319,331,311,381" target="photo" alt="Downtown" title="Downtown">
+  <area href="images/duho-dong.jpg" shape="poly" coords="326,171,378,175,394,205,355,280,306,244" target="photo" alt="Duho-dong" title="Duho-dong">
+  <area href="images/jangseong-dong.jpg" shape="poly" coords="374,37,431,62,455,64,455,128,382,171,329,161" target="photo" alt="Jangseong-dong" title="Jangseong-dong">
+  <area href="images/yangdeok-dong.jpg" shape="poly" coords="457,61,376,35,377,16,459,18,520,47,550,98,461,123" target="photo" alt="Yangdeok-dong" title="Yangdeok-dong">
+</map>
+<div id="wrapper">
+  <figure id="figure">
+    <figcaption>
+      <div>
+        The map of Pohang on the left contains several of the more prominent areas of the city.  Korean cities are divided up into districts which in
+        Korean are called "dong". Koreans often refer to different parts of a city by it district name.  Move the cursor around the map of Pohang to 
+        have the different areas identified and see a representative picture from that location.
+      </div>
+    </figcaption>
+
+    <img id="pohangMap" src="images/pohangMap.jpg" alt="Map of Pohang" usemap="#pohang-areas">
+    <iframe name="photo" src="images/downtown.jpg"></iframe>
+  </figure>
+</div>
+<h2>Description of Pohang Districts</h2>
+<div class="scroller">
+  <p>
+    I-dong is located in the west side of Pohang.  It is a quite developed and modern area of the city.  City Hall and other government buildings are located there.
+  </p>
+  <p>
+    Jigok-dong is the area built up around POSTEC, one of the best universities for science and technology in Korea.  It is on the very west side of Pohang. 
+    POSCO funds a lot of the development for schools, parks, and other facilities in this area.
+  </p>
+  <p>
+    POSCO stands for Pohang Steel Company and is one of the largest corporations in Korea.  The steel factory is the 2nd largest in the world.  It completely 
+    dominates the southern side of Pohang and it provides the livelihood for many citizens of Pohang.
+  </p>
+  <p>
+    Jukdo-dong is in the center of the city and is probably the oldest part of the city.  Jukdo market, the largest market in the city, can be found here. 
+    This is the place to go to if you want to see the older, more traditional side of Pohang.
+  </p>
+  <p>
+    The downtown area is near jukdo-dong.  It comprises many streets for pedestrians and many restaurants, shops, cafes, and movie theaters.  This is the place
+    to go for shopping in Pohang.  It is usually packed on weekends on holidays with window shoppers.
+  </p>
+  <p>
+    Duho-dong is the district immediately behind Yeongildae Beach.  Swimmers can be found here in the summer.  Restaurants, cafes, and hotels line the beach.
+    There are many restaurants specializing in various kinds of shellfish.
+  </p> 
+  <p>
+    Jangseong is a district in the northern part of Pohang.  It is largely residential.  Many towering apartment buildings can be found here including
+    Dusan Weeb, the tallest buildings in Pohang.
+  </p>
+  <p>
+    Yeongdeok-dong is the newest area of Pohang in the very north and east of the city.  Many newer apartment complexes as well as restaurants can be found
+    here.  This is a place where many of Pohang's affluent have come to live recently.  Pohang University is on its eastern edge.
+  </p>
+</div>
+<br>
+
+<h2>Pohang Weather</h2>
+  <fieldset>
+    <legend>Current Weather</legend>
+    <form>
+      <label for="citySubmit">Check the weather for Pohang, South Korea</label>
+      <input type="submit" id="citySubmit">
+    </form>
+    <ul>
+      <li><span>City: </span><span id="displayCity"></span></li>
+      <li><span>Current temperature: </span><span id="displayTemperature"></span></li>
+      <li><span>Current humidity: </span><span id="displayHumidity"></span></li>
+      <li><span>Current wind speed: </span><span id="displayWind"></span></li>
+    </ul>
+  </fieldset>
+<br>
+
+<h2>Pohang Travel Information</h2>
+<p>
+  If you would like detailed travel information for Pohang feel free to download the travel guide below.
+  <br>
+  <br>
+  <a href="pohang_travel_guide.pdf" title="Pohang Travel Guide">Download a travel guide for Pohang.</a>
+</p>
+<br>
+
+<h2>Take the survey!</h2>
+<h3>In order to get a better picture of what the foreign population is like in Pohang, please respond to the following survey.</h3>  
+<form>
+  <p>What was your primary reason for coming to Pohang?</p>
+  <label><input type="radio" name="survey1" value="tourism" required> tourism</label><br>
+  <label><input type="radio" name="survey1" value="teaching English"> teaching English</label><br>
+  <label><input type="radio" name="survey1" value="business"> business</label><br>
+  <label><input type="radio" name="survey1" value="attending university"> attending university</label><br>
+  <label><input type="radio" name="survey1" value="military service"> military service</label><br>
+  <label><input type="radio" name="survey1" value="visiting family"> visiting family</label><br>
+  <label><input type="radio" name="survey1" value="other"> other</label><br>
+
+  <p>How long have you been staying in Pohang?</p>
+  <label><input type="radio" name="survey2" value="less than 1 year" required> less than 1 year</label><br>
+  <label><input type="radio" name="survey2" value="1-3 years"> 1-3 years</label><br>
+  <label><input type="radio" name="survey2" value="3-5 years"> 3-5 years</label><br>
+  <label><input type="radio" name="survey2" value="5-10 years"> 5-10 years</label><br>
+  <label><input type="radio" name="survey2" value="more than 10 years"> more than 10 years</label><br>
+
+  <p>What continent did you come from originally?</p>
+  <label><input type="radio" name="survey3" value="North America" required> North America</label><br>
+  <label><input type="radio" name="survey3" value="South America"> South America</label><br>
+  <label><input type="radio" name="survey3" value="Europe"> Europe</label><br>
+  <label><input type="radio" name="survey3" value="Africa"> Africa</label><br>
+  <label><input type="radio" name="survey3" value="Asia"> Asia</label><br>
+  <label><input type="radio" name="survey3" value="Australia/Oceania"> Australia/Oceania</label><br>
+  <label><input type="radio" name="survey3" value="Antarctica"> Antarctica</label><br>
+
+  <p>What is your favorite Korean food?</p>
+  <label><input type="radio" name="survey4" value="kimchi" required> kimchi</label><br>
+  <label><input type="radio" name="survey4" value="samgyeopsal"> samgyeopsal</label><br>
+  <label><input type="radio" name="survey4" value="dwaenjangjjigae"> dwaenjangjjigae</label><br>
+  <label><input type="radio" name="survey4" value="bulgogi"> bulgogi</label><br>
+  <label><input type="radio" name="survey4" value="bibimbap"> bibimbap</label><br>
+  <label><input type="radio" name="survey4" value="gimbap"> gimbap</label><br>
+  <label><input type="radio" name="survey4" value="ddeokbokki"> ddeokbokki</label><br>
+  <label><input type="radio" name="survey4" value="kalguksu"> kalguksu</label><br>
+  <label><input type="radio" name="survey4" value="bossam"> bossam</label><br>
+  <label><input type="radio" name="survey4" value="haejangguk"> haejangguk</label><br>
+  <label><input type="radio" name="survey4" value="mulhoe"> mulhoe</label><br>
+  <label><input type="radio" name="survey4" value="gwamegi"> gwamegi</label><br>
+  <label><input type="radio" name="survey4" value="other"> other</label><br>
+
+  <p>What is your least favorite Korean food?</p>
+  <label><input type="radio" name="survey5" value="kimchi" required> kimchi</label><br>
+  <label><input type="radio" name="survey5" value="sundae"> sundae</label><br>
+  <label><input type="radio" name="survey5" value="ddeokbokki"> ddeokbokki</label><br>
+  <label><input type="radio" name="survey5" value="chicken feet"> chicken feet</label><br>
+  <label><input type="radio" name="survey5" value="beondegi"> beondegi</label><br>
+  <label><input type="radio" name="survey5" value="dried squid"> dried squid</label><br>
+  <label><input type="radio" name="survey5" value="hongeohoe"> hongeohoe</label><br>
+  <label><input type="radio" name="survey5" value="brown seaweed"> brown seaweed</label><br>
+  <label><input type="radio" name="survey5" value="other"> other</label><br><br>
+
+  <input class="button" type="button" value="Submit Survey" onclick="displaySurveyResults(this.form);"> 
+</form>
+<p class="results" id="results"></p>
+<footer>
+  <nav><ul>
+    <li><a href="#">Top</a></li>
+    <li><a href="index.html">Home</a></li>
+  </ul></nav>
+<h5>Copyright &copy; 2019 Louis Adams. All rights reserved.</h5>
+</footer>
+<script src="index.js"></script>
+</body>
+</html>
