@@ -10,6 +10,4 @@ A modern web browser.
 
 Download files and open index.html in a web browser.
 
-## Example Usage
-
 ![screenshot1](images/pohang_website.png)
